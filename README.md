@@ -34,7 +34,7 @@ This documentation explains how to integrate OpenTelemetry Java agent with SigNo
    Confirm the installation by checking the Java version:
 
    ```bash
-   java -version
+   java --version
    ```
 
    You should see output similar to:
@@ -65,7 +65,8 @@ The Spring PetClinic application is a well-known sample application used to demo
 2. **Run the Application**
 
    ```bash
-   ./mvnw spring-boot:run
+   ./mvnw package
+   java -jar target/*.jar
    ```
 
    If your application runs successfully, you will be able to access the application UI at:  
@@ -82,6 +83,9 @@ To instrument your Java application with OpenTelemetry, follow these steps:
 1. **Download OpenTelemetry Java Agent**  
    Download the OpenTelemetry Java agent JAR from the [OpenTelemetry GitHub Releases](https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases).
 
+   ```bash
+   wget https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/latest/download/opentelemetry-javaagent.jar
+   ```
    > **Note:** Save the agent JAR in a folder named `java-agent` inside your project for better organization.
 
 2. **Run Your Application with the OpenTelemetry Agent**
