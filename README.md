@@ -112,7 +112,7 @@ To instrument your Java application with OpenTelemetry, follow these steps:
    Open the **Services** tab of the SigNoz dashboard. You should see your Spring Boot application being monitored.
 
    - If you are a first-time user, follow the onboarding flow for Java applications to instrument your own Spring Boot application.
-
+   ![petclinic-dashboard](petclinic.png)
 ---
 
 ## Application Metrics and Traces
@@ -122,10 +122,23 @@ SigNoz makes it easy to visualize metrics and traces captured through OpenTeleme
 - **Application Metrics and Logs**  
   Metrics and logs from the PetClinic Spring Boot application can help identify key operations.
 
+  ![service](service.png)
+
 - **Traces**  
   Traces for key operations in the application are captured and displayed for better monitoring and debugging.
+  ![key-operations](key-operations.png)
 
 ---
+
+- **Logs**  
+  Some more logs captured through the OpenTelemetry instrumentation
+  ![Main Logs](logs.png)
+
+  ---
+  ![get](get.png)
+
+  ---
+  ![Traces](traces.png)
 
 ## Troubleshooting
 
@@ -161,5 +174,3 @@ SigNoz makes it easy to visualize metrics and traces captured through OpenTeleme
 
 By following the steps above, you should be able to set up OpenTelemetry with your Java application and troubleshoot any connectivity issues. If the problem persists, check the respective logs on the OpenTelemetry agent and SigNoz to gather more insights.
 ```
-
-You can copy and save this content into a `.md` file, such as `README.md`, and add it to your GitHub repository. Let me know if you need further adjustments!
