@@ -71,6 +71,8 @@ The Spring PetClinic application is a well-known sample application used to demo
    If your application runs successfully, you will be able to access the application UI at:  
    [http://localhost:8090/](http://localhost:8090/)
 
+   ![springboot-ui](ui.png)
+
 ---
 
 ## Step 3: Integration with Java Application
